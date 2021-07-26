@@ -2,44 +2,44 @@
 
 ## Commands
 
-* Log-  
+* **Log-**  
 `mongo -u <username> -p <password> --authenticationDatabase <dbname>`  
 
-* Show All Databases-  
+* **Show All Databases-**  
 `show dbs`  
 
-* Select DB-  
+* **Select DB-**  
 `use databaseName`  
 
-* Authenticate-  
+* **Authenticate-**  
 `db.auth("username", "password")`  
 
-* Logout-  
+* **Logout-**  
 `db.logout()`  
 
-* List collections-  
+* **List collections-**  
 `show collections;`  
 `db.getCollectionNames();`  
 
-* List Users-  
+* **List Users-**  
 `show users;`  
 `db.getUsers();`  
 
-* List roles-  
+* **List roles-**  
 `show roles`  
 
-* Create collection-  
+* **Create collection-**  
 `db.createCollection("collectionName");`  
 
-* Insert document-  
+* **Insert document-**  
 `db.<collectionName>.insert({field1: "value", field2: "value"})`  
 `db.<collectionName>.insert([{field1: "value1"}, {field1: "value2"}])`  
 `db.<collectionName>.insertMany([{field1: "value1"}, {field1: "value2"}])`  
 
-* Save or Update-  
+* **Save or Update-**  
 `db.<collectionName>.save({"_id": new ObjectId("jhgsdjhgdsf"), field1: "value", field2: "value"});`  
 
-* Display records-  
+* **Display records-**  
 `db.<collectionName>.find();`  
 `db.<collectionName>.find().limit(10);`  
 `db.<collectionName>.find({"_id": ObjectId("someid")});`  
