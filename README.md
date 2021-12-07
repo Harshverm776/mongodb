@@ -41,8 +41,13 @@
 
 * **Display records-**  
 `db.<collectionName>.find();`  
+`db.<collectionName>.find().pretty();`  
 `db.<collectionName>.find().limit(10);`  
 `db.<collectionName>.find({"_id": ObjectId("someid")});`  
-`db.<collectionName>.find({"_id": ObjectId("someid")}, {field1: 1, field2: 1});`
+`db.<collectionName>.find({"_id": ObjectId("someid")}, {field1: 1, field2: 1});`  
 `db.<collectionName>.find({"_id": ObjectId("someid")}, {field1: 0});`  
-`db.<collectionName>.count();`
+`db.<collectionName>.count();`  
+
+* **Drop collections-**  
+`db.<collectionName>.drop()`  
+
